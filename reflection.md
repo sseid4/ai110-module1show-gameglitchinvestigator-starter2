@@ -15,9 +15,9 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Guess higher than the secret | Show "Go LOWER!" | Showed "Go HIGHER!" | None |
+| Guess lower than the secret | Show "Go HIGHER!" | Showed "Go LOWER!" | None |
+| Click New Game in Hard mode | Use Hard range | Used the default range | None |
 
 ---
 
