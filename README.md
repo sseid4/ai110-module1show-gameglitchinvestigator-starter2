@@ -33,20 +33,23 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. **Start the game**: Select a difficulty level (Easy, Normal, or Hard) from the sidebar. The game displays the secret number range and number of attempts allowed.
+2. **Enter your first guess**: Type a number in the input box and click "Submit Guess 🚀". The app shows whether your guess is correct or if it's too high or too low.
+3. **Follow the hints**: The hints now correctly tell you which direction to guess: if too high, it says "Go LOWER!", if too low, it says "Go HIGHER!". Use these hints to narrow down your guess.
+4. **Win the game**: Continue guessing using the hints until you find the secret number. When correct, the app shows "You won!" with balloons, displays your final score, and logs all your guesses.
+5. **Start a new game**: Click "New Game 🔁" to reset the game state, generate a new secret number matching the current difficulty, and play again with a fresh attempt counter.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+pytest tests/test_game_logic.py -v
+============================= test session starts ==============================
+tests/test_game_logic.py::test_winning_guess PASSED                      [ 33%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 66%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [100%]
+============================== 3 passed in 0.01s ===============================
 ```
 
 ## 🚀 Stretch Features
